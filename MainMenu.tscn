@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1cad2v5aqwyf"]
+
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_ukas4"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ukas4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 168.0
+offset_right = 844.0
+offset_bottom = 537.0
+metadata/_edit_group_ = true
+
+[node name="Game1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start Game 1"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start Game 2"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Game1" to="." method="_on_game_1_pressed"]

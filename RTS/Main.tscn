@@ -148,11 +148,13 @@ sources/0 = SubResource("TileSetAtlasSource_s1y6c")
 vertices = PackedVector2Array(65, 144, 161, 139, 160, 488, 144, 488, 66, 566, 144, 552, 160, 552, 160, 576, 66, 573)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 0, 3, 5), PackedInt32Array(5, 6, 7, 8, 4)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(66, 566, 65, 144, 161, 139, 160, 488, 144, 488, 144, 552, 160, 552, 160, 576, 66, 573)])
+source_geometry_group_name = &"navigation_polygon_source_group"
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_7rdqk"]
 vertices = PackedVector2Array(288, 570, 160, 576, 160, 552, 176, 552, 285, 145, 176, 488, 161, 140, 160, 488)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 0, 3, 5), PackedInt32Array(6, 4, 5, 7)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(288, 570, 285, 145, 161, 140, 160, 488, 176, 488, 176, 552, 160, 552, 160, 576)])
+source_geometry_group_name = &"navigation_polygon_source_group"
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_mtmoy")
