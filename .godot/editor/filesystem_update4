@@ -1,3 +1,7 @@
-res://RTS/Units/PlayerUnit.gd
-res://RTS/Units/EnemyUnit.gd
+res://MainMenu.tscn
+res://RTS/Main.tscn
+res://RTS/Units/EnemyUnit.tscn
+res://RTS/Units/PlayerUnit.tscn
+res://IntoToG4/IntoG4Main.tscn
 res://RTS/GameManager.gd
+res://MainMenu.gd
