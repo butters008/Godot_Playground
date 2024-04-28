@@ -30,3 +30,5 @@ func _basicVarsAndMethods() -> void:
 	print(strictVar2)
 	print(strictArray)
 	
+func rotate_and_move_sprite():
+	
