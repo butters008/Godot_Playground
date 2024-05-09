@@ -1,4 +1,3 @@
-res://Beginner/Beginner Notes.txt
-res://beginner.tscn
-res://README.md
-res://beginner.gd
+res://Beginner/beginner.tscn
+res://Beginner/beginner.gd
+res://Beginner/Sprite2D.gd

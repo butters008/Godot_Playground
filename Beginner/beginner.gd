@@ -2,9 +2,14 @@ extends Node2D
 
 #Vars can be declared as instance and/or global...I think global
 var test = "string"
+#var position = Vector2.Z
+@export var testSprite : Sprite2D
 
 func _ready():
 	_basicVarsAndMethods()
+	
+func _process(delta):
+	rotate_and_move_sprite()
 	
 # If you do not do the -> at the end, it is shorthand for void
 func _basicVarsAndMethods() -> void:
@@ -31,4 +36,8 @@ func _basicVarsAndMethods() -> void:
 	print(strictArray)
 	
 func rotate_and_move_sprite():
+	#var test = $Sprite2D.get_node("Sprite2D")
+	#test.position.x += 5
+	testSprite.position.x += 5
+	#pass
 	

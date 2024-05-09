@@ -11,6 +11,10 @@ config_version=5
 [application]
 
 config/name="Godot Playground - Regular"
-run/main_scene="res://beginner.tscn"
+run/main_scene="res://Beginner/beginner.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="Godot Playground - Regular"
