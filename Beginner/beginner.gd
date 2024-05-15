@@ -2,8 +2,12 @@ extends Node2D
 
 #Vars can be declared as instance and/or global...I think global
 var test = "string"
-#var position = Vector2.Z
+var speed : int = 5
+#This is how I figured it out to get the node
 @export var testSprite : Sprite2D
+
+
+
 
 func _ready():
 	_basicVarsAndMethods()
@@ -34,10 +38,21 @@ func _basicVarsAndMethods() -> void:
 	print(strictVar)
 	print(strictVar2)
 	print(strictArray)
+	for i in strictArray:
+		print(i)
+	
+	
 	
 func rotate_and_move_sprite():
-	#var test = $Sprite2D.get_node("Sprite2D")
-	#test.position.x += 5
-	testSprite.position.x += 5
-	#pass
+	#There are two different ways from clear code to get the
+	$Sprite2D.rotation_degrees += 5
+	$Sprite2D.position.x += speed
+	
+	if($Sprite2D.rotation_degrees > 180):
+		$Sprite2D.rotation_degrees = 0
+		
+	if	$Sprite2D.position.x > 1000:
+		speed = -5
+	elif $Sprite2D.position.x < -200:
+		speed = 5
 	
