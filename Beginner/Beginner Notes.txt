@@ -1,0 +1,7 @@
+Beginner notes:
+Trying to learn Godot to a point where I feel like I can actually develop in it.
+
+Nodes - The building blocks of Godot, everything inside a "scene" is constructed of node
+Scene - Everything is a scene that is construct from nodes, and you can put scenes inside of scene, to build
+		characters, levels, design, and ect
+		
