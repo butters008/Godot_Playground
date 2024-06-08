@@ -2196,5 +2196,10 @@ text = "Beginner Scene"
 layout_mode = 2
 text = "Simple 2D Character (8D)"
 
+[node name="2D_Physics" type="Button" parent="Menu/VBoxContainer"]
+layout_mode = 2
+text = "2D Physics"
+
 [connection signal="pressed" from="Menu/VBoxContainer/Beginner_Scene" to="Menu" method="_on_beginner_scene_pressed"]
 [connection signal="pressed" from="Menu/VBoxContainer/Simple_2D_Character" to="Menu" method="_on_simple_2d_character_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/2D_Physics" to="Menu" method="_on_d_physics_pressed"]

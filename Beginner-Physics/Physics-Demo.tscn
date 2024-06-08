@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu2l3hvj6jry6"]
+
+[ext_resource type="Texture2D" uid="uid://b66ndagivgox2" path="res://Art/personal_sprites/Little Buddy.png" id="1_vspe5"]
+[ext_resource type="PackedScene" uid="uid://c3jfvk3mkvs7a" path="res://Helpers/menu_return.tscn" id="2_2ec74"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dpfnl"]
+radius = 13.0
+height = 60.0
+
+[node name="Physics-demo" type="Node2D"]
+
+[node name="2D_Toon_Physics" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="2D_Toon_Physics"]
+texture = ExtResource("1_vspe5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2D_Toon_Physics"]
+position = Vector2(3, 3)
+shape = SubResource("CapsuleShape2D_dpfnl")
+
+[node name="Menu_Return" parent="." instance=ExtResource("2_2ec74")]

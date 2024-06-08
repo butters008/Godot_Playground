@@ -5,12 +5,13 @@ var test = "string"
 var speed : int = 5
 #This is how I figured it out to get the node
 @export var testSprite : Sprite2D
+var strictArrayGoingToOtherNodes : Array = [3, 8, 9]
 
 func _ready():
 	_basicVarsAndMethods()
 	
 func _process(delta):
-	rotate_and_move_sprite()
+	rotate_and_move_sprite(delta)
 	
 # If you do not do the -> at the end, it is shorthand for void
 func _basicVarsAndMethods() -> void:
@@ -40,9 +41,10 @@ func _basicVarsAndMethods() -> void:
 	
 	
 	
-func rotate_and_move_sprite():
+func rotate_and_move_sprite(delta):
 	#There are two different ways from clear code to get the
-	$Sprite2D.rotation_degrees += 5
+	#Adding delta made the rotation become very slow
+	$Sprite2D.rotation_degrees += 5 * delta 
 	$Sprite2D.position.x += speed
 	
 	if($Sprite2D.rotation_degrees > 180):
@@ -50,6 +52,6 @@ func rotate_and_move_sprite():
 		
 	if	$Sprite2D.position.x > 1000:
 		speed = -5
-	elif $Sprite2D.position.x < -200:
+	elif $Sprite2D.position.x < -10:
 		speed = 5
 	

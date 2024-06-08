@@ -1,5 +1,6 @@
 extends Sprite2D
 
-func _process(delta):
-	#position.x += 5
-	pass
+func _ready():
+	print("Inside the Sprite Node - ", $"..".strictArrayGoingToOtherNodes)
+	print("Inside the Sprite Node - method")
+	$".."._basicVarsAndMethods()

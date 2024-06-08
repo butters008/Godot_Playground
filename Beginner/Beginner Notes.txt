@@ -1,7 +1,25 @@
 Beginner notes:
 Trying to learn Godot to a point where I feel like I can actually develop in it.
 
+-- HELPFUL NOTES ------------------------------------------------------------
+- In the scene tab (top right by default), click on the chain icon and it will bring
+in a scene that you choose
+
+
 Nodes - The building blocks of Godot, everything inside a "scene" is constructed of node
 Scene - Everything is a scene that is construct from nodes, and you can put scenes inside of scene, to build
 		characters, levels, design, and ect
 		
+Delta - This makes the game run at the framerate for the computer, regardless of fps of the comptuer
+
+Movement:
+	- Make sure you have the actions in the input map in the project settings
+	
+Nodes
+	- 2 ways to target nodes
+		1) get_node("node_path")
+		2) $node path <- going to be using this one more I guess, in clear code at least
+	- You can also give nodes unique names
+	- You can capture a node in code, and access all the properties and methods
+		- Think of them like classes/objects
+	
