@@ -4,6 +4,9 @@ Trying to learn Godot to a point where I feel like I can actually develop in it.
 -- HELPFUL NOTES ------------------------------------------------------------
 - In the scene tab (top right by default), click on the chain icon and it will bring
 in a scene that you choose
+- You can change node types by right clicking on node and selecting change type in the
+drop down menu that appears
+
 
 
 Nodes - The building blocks of Godot, everything inside a "scene" is constructed of node
@@ -22,4 +25,18 @@ Nodes
 	- You can also give nodes unique names
 	- You can capture a node in code, and access all the properties and methods
 		- Think of them like classes/objects
+	
+2D Nodes - Physics
+- Area2: An area that can check if another body entered 
+	- Can be moved by changing the position
+	- Example: Check if the player entered a house
+- StaticBody2D: A static body that others bodies collide with
+	- Not supposed to move
+	- Example: Any static objects, walls, beds, obstables...
+- RigidBody2D: Moving body that moves via physics (Like a cannon ball!)
+	- Set an initial velocity
+	- Example: The gernade
+- CharacterBody2D: Moving body controlled by code
+	- Inbuilt methods
+	- Example: An entity that is controlled by code: the player and all enemies
 	
