@@ -6,9 +6,6 @@ var speed : int = 5
 #This is how I figured it out to get the node
 @export var testSprite : Sprite2D
 
-
-
-
 func _ready():
 	_basicVarsAndMethods()
 	

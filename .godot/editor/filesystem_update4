@@ -1,2 +1,7 @@
+res://MainMenu.tscn
 res://Beginner/beginner.tscn
-res://Beginner/beginner.gd
+res://Beginner/Simple2D-Character.tscn
+res://Menu.gd
+res://Beginner/Simple2D-Character.gd
+res://Helpers/menu_return.gd
+res://Helpers/menu_return.tscn
