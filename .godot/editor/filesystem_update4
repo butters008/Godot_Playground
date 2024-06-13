@@ -1,11 +1,5 @@
-res://Helpers/menu_return.tscn
-res://Beginner/Beginner Notes.txt
 res://Beginner/beginner.tscn
-res://Beginner/beginner.gd
 res://MainMenu.tscn
 res://Beginner/Simple2D-Character.tscn
-res://Beginner/Simple2D-Character.gd
-res://Beginner/2D_toon_level.gd
-res://Beginner/Sprite2D.gd
+res://Helpers/menu_return.tscn
 res://Beginner-Physics/Physics-Demo.tscn
-res://Menu.gd
